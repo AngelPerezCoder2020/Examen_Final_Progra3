@@ -20,6 +20,7 @@ public class Pet {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	@NotBlank(message = "El Nombre no puede estar vacío")
 	private String name;
 	@NotBlank(message = "El Precio no puede estar vacío")
 	private double price;
