@@ -22,7 +22,7 @@ public class Pet {
 	private Long id;
 	@NotBlank(message = "El Nombre no puede estar vacío")
 	private String name;
-	@NotBlank(message = "El Precio no puede estar vacío")
+	@NotNull(message = "El Precio no puede estar vacío")
 	private double price;
 	@Column(name = "birth_day")
 	@NotNull(message="La fecha no puede ser null")
