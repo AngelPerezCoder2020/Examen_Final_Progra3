@@ -34,6 +34,7 @@ public class PetController {
 	
 	@PostMapping()
 	public Pet createPet(@RequestBody Pet pet) {
+		pet.setId(null);
 		return service.createPet(pet);
 	}
 	
